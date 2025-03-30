@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Css Selectors</title>
+    <style>
+      /*universal selector*/
+      *{
+        font-family:sans-serif;
+      }
+      /*root selector*/
+      body{
+        background-color:lightblue;
+      }
+      /*id selector*/
+      #header{
+        color:navy;
+      }
+      /*class selector*/
+      .text{
+        color:yellow;
+      }
+      /*type selector*/
+      p{
+        font-size:16px;
+      }
+      /*attribute selector*/
+      input[type="text"]{
+        border:1px solid gray;
+      }
+      /*child selector*/
+      ul > li{
+        list-style-type:square;
+      }
+      /*group selector*/
+      div,p{
+        text-align:center;
+      }
+      /*pseudo-class selector*/
+      a:hover{
+        text-decoration:none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">I am a header with id selector</div>
+    <p>I am a paragraph with element selector</p>
+    <div class="text">I am a secound div with class selecor</div>
+    <input type="text" name="text" placeholder="Enter name">
+    <ul>
+      <li>Chess</li>
+      <li>Carrom</li>
+      <li>Ludo</li>
+    </ul>
+    <a href="http://www,google.com">Click me</a>
+  </body>
+</html>
